@@ -13,4 +13,3 @@ while True:
             break
         case _:
             history.append(text)
-
