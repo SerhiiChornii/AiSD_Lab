@@ -7,6 +7,16 @@ def druga_najwieksza(lista):
     return max(zbior)
 
 
+# lista = [100, 23, 34, 67, 8, 101, 101]
+# druga_najwieksza(lista)  # -> 100
+# print(f"Input: {lista} | Output: {druga_najwieksza(lista)}")
+# lista = [4, 6, 6, 7, 9, 9, 9, 10, 20, 20, 34]
+# druga_najwieksza(lista)  # -> 20
+# print(f"Input: {lista} | Output: {druga_najwieksza(lista)}")
+# lista = [1, -5, -67, 12, 89, 50, -7, 20, 17]
+# druga_najwieksza(lista)  # -> 50
+# print(f"Input: {lista} | Output: {druga_najwieksza(lista)}")
+
 def druga_najwieksza2(lista):
     zbior = list(set(lista))
     zbior = sorted(zbior)
