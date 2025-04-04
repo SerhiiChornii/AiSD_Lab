@@ -14,6 +14,9 @@ while True:
     match inpt.strip().lower():
         case '1':
             zadanie = input("Wpisz zadanie: ")
+            if not zadanie:
+                print("Nazwa zadanie nie może być pustą")
+                continue
             priorytet = int(input("Wpisz priorytet zadania: "))
             heapq.heappush(zadania, (zadanie, priorytet))
         case '2':
@@ -25,7 +28,7 @@ while True:
         case 'menu' | 'help' | '-h':
             print(menu)
         case 'exit' | '4':
-            print("Zakończenie roboty programu")
+            print("Zakończenie programu")
             break
         case _ :
             print("Wprowadzono niepoprawne działanie")
