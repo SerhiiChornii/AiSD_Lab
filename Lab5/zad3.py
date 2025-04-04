@@ -23,6 +23,9 @@ while True:
     match inpt.strip().lower():
         case '1':
             pacjent = input("Wpisz pacjęta: ")
+            if not pacjent:
+                print("Imię pacjenta nie może być puste")
+                continue
             enqueue(kolejka, pacjent)
         case '2':
             if is_empty(kolejka):
