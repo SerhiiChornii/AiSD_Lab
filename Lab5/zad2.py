@@ -12,8 +12,11 @@ def func(kolejka: queue.Queue, n: int):
     return l
 
 q = queue.Queue()
-# q.put(1)
-# q.put(1)
-# q.put(1)
-# q.put(1)
-print(func(q, 2))
+empty_queue = queue.Queue()
+q.put(10)
+q.put(20)
+q.put(30)
+q.put(40)
+
+print(func(q, 3))
+print(func(empty_queue, 1))
