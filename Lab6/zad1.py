@@ -15,10 +15,9 @@ def bubble_sort(l):
                 l[j], l[i] = l[i], l[j]
     return l
 
-
-scores_s = bubble_sort(scores)
-
 print(f"Wyniki graczy: {scores}")
+scores_s = bubble_sort(scores)
 print(f"Posortowane wyniki graczy: {scores_s}")
 print(f"Największy wynik: {scores_s[-1]}")
 print(f"Najmniejszy wynik: {scores_s[0]}")
+
