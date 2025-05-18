@@ -6,10 +6,12 @@ graf = {
     'E': {'A', 'C'},
 }
 
-
-def show_wiersz(graf):
+def show_wiersz(graf, wiersz):
     for i in graf:
-        print(f"{i}: ", *graf[i])
+        if i == wiersz:
+            print(f"{i}: ", *graf[i])
 
-
-show_wiersz(graf)
+show_wiersz(graf, 'A')
+show_wiersz(graf, 'B')
+show_wiersz(graf, 'C')
+show_wiersz(graf, 'D')
